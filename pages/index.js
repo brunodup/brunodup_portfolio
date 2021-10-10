@@ -1,19 +1,20 @@
-// https://brunodup-portfolio-brunodup.vercel.app/
-
 import App from './_app';
 
 import Logo from '/components/Logo';
 import Container from '/components/Container';
 import Lettering from '/components/Lettering';
-import Countdown from '/components/Countdown';
 import Nav from '/components/Nav';
+import Thumb from '../components/Thumb';
+import GridContainer from '../components/GridContainer';
 
-function home() {
+import projects from './api/content.json';
+
+function Home() {
   return (
     <>
     <Container>
+      <aside>
       <Logo />
-      <Nav />
       <Lettering>
         <span>E-COMMERCE</span>
         <span>DESIGN</span>
@@ -21,10 +22,16 @@ function home() {
         <span>NOMADISMO DIGITAL</span>
         <span>MINIMALISMO</span>
       </Lettering>
-      <Countdown />
+      <Nav />
+      </aside>
+      <GridContainer>
+        {
+          projects.map((project,i) => <Thumb key={i} gridItem={`Item-${i+1}`} link={project.slug} icon={project.icon} name={project.name} />)
+        }
+      </GridContainer>
     </Container>
     </>
   )
 }
 
-export default home;
+export default Home;

@@ -1,3 +1,5 @@
 .container {
-  /* background-color: #ccc; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }

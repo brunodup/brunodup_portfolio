@@ -1,0 +1,17 @@
+.gridContainer {
+	width: 100%;
+	max-width: 900px;
+	height: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		". Item-2 Item-1 Item-1"
+		"Item-3 Item-2 Item-4 Item-5"
+		"Item-7 Item-6 Item-6 Item-5"
+		"Item-7 Item-8 Item-10 Item-11"
+		"Item-9 Item-9 Item-10 ."
+		"Item-13 Item-12 Item-12 .";
+}

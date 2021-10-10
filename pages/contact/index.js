@@ -5,16 +5,24 @@ import App from '../_app';
 import Logo from '/components/Logo';
 import Container from '/components/Container';
 import Nav from '/components/Nav';
-import Countdown from '/components/Countdown';
+import Lettering from '/components/Lettering/';
 
 function contact() {
   return (
     <>
     <Container>
+      <aside>
       <Logo />
+      <Lettering>
+        <span>E-COMMERCE</span>
+        <span>DESIGN</span>
+        <span>DESENVOLVIMENTO WEB</span>
+        <span>NOMADISMO DIGITAL</span>
+        <span>MINIMALISMO</span>
+      </Lettering>
       <Nav />
+      </aside>
       <h1>Teste contact</h1>
-      <Countdown />
     </Container>
     </>
   )

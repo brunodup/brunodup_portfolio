@@ -1,0 +1,56 @@
+.navOpen {
+  width: 40px;
+  height: 40px;
+}
+
+.navOpen span {
+  background-color: white;
+  border-radius: 1px;
+  height: 2px;
+  display: block;
+  margin-bottom: 6px;
+  transition: all 300ms;
+}
+
+.navOpen span:first-of-type {max-width: 60%;}
+.navOpen span:nth-of-type(2) {max-width: 100%;}
+.navOpen span:last-of-type {max-width: 80%;}
+
+
+.navOpen.navActive span:first-of-type {
+  max-width: 100%;
+  transform: rotate(-45deg)
+             translate(-10px,10px);
+  
+}
+.navOpen.navActive span:nth-of-type(2) {
+  opacity: 0;
+}
+.navOpen.navActive span:last-of-type {
+  max-width: 100%;
+  transform: rotate(45deg);
+  
+}
+
+.navContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms;
+}
+
+.navContent a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 300ms;
+  display: block;
+}
+
+.navContent a:hover {
+  padding-left: 15px;
+}
+
+.navContent.navActive {
+  max-height: 500px;
+
+}

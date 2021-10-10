@@ -1,5 +1,52 @@
+
+@keyframes logoLight {
+  from {
+    transform: rotate(-8deg);
+  }
+  to {
+    transform: rotate(8deg);
+  }
+}
+
 .logo {
   display: inline-flex;
-  background-color: red;
   margin: 0;
+  flex-direction: column;
+}
+
+.logo svg {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.logo .logoSymbol,
+.logo .logoLetter {
+  transition: all 300ms;
+}
+
+.logo:hover .logoSymbol {
+  transform: translate(0,-180px);
+}
+.logo .logoLetter {
+  transform: translate(0,-280px);
+}
+.logo:hover .logoLetter {
+  transform: translate(0, -100px);
+  transition-delay: 200ms;
+}
+
+.logo:hover:before {
+  animation-play-state: paused;
+}
+
+.logo:before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='173' height='246' viewBox='0 0 173 246' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0H153L173 246H0L20 0Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='86.5' y1='0' x2='86.5' y2='246' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0.25'/%3E%3Cstop offset='1' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  width: 173px;
+  height: 246px;
+  position: absolute;
+  top: -20px;
+  animation: logoLight 3000ms infinite forwards alternate;
+  transform-origin: top center;
+  opacity: .6;
 }

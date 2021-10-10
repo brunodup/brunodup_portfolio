@@ -1,6 +1,10 @@
 .lettering {
-  font-size: 50px;  
+  font-size: 26px;  
   font-weight: bold;
+  color: white;
+  padding-left: 40px;
+  line-height: 2;
+  min-height: 300px;
 }
 
 .lettering span {
