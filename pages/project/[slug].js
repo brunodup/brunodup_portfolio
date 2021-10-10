@@ -37,8 +37,16 @@ function Home() {
       <Nav />
       </aside>
       <div>
-         <h1>{project[0].name}</h1>
-         <h2>{project[0].year}</h2>
+        {
+          project.length > 0 ?
+           <>
+              <h1>{project[0].name}</h1>
+              <h2>{project[0].year}</h2>
+           </>
+          :
+          <h1>Não consegui encontrar essa página, tenta de novo por favor</h1>
+        }
+         
       </div>
     </Container>
     </>
