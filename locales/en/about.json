@@ -1,0 +1,10 @@
+{
+  "title": "aboutpage",
+  "description": "this is a page <strong>about me</strong>",
+  "current-language": "current page is /{{language}}",
+  "ecommerce":"E-COMMERCE",
+  "design":"DESIGN",
+  "webdev":"WEB DEVELOPMENT",
+  "nomadic":"DIGITAL NOMADIC",
+  "minimalism":"MINIMALISM"
+}

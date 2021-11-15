@@ -3,13 +3,9 @@
 
 function Icon(props) {
   return (
-    <div className="container">
-      <div className={`Item-${props.key}`}>
-        <a href={props.link}>
-         <Icon path={props.path} />
-        </a>
-      </div>
-    </div>
+    <svg>
+      {props.path}
+    </svg>
   )
 }
 

@@ -28,3 +28,11 @@ ol {
   padding: 0;
   list-style: none;
 }
+
+@media (max-width: 959px) {
+  body:before {
+    width: 36px;
+    max-height: 75px;
+    transform: rotate(-90deg);
+  }
+}

@@ -10,3 +10,9 @@
 .lettering span {
   display: block;
 }
+
+@media (max-width: 959px) {
+  .lettering {
+    display: none;
+  }
+}

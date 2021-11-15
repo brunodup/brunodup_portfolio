@@ -15,10 +15,20 @@
 }
 .thumbItem:hover {
   box-shadow: 0 0 12px 0 #101010;
+  color: white;
 }
 
 .thumb {
   margin: 10px;
+}
+
+.thumbSmall {
+  display: block;
+  text-align: center;
+  color: #666;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1.5px;
 }
 
 
@@ -74,3 +84,13 @@
 	grid-area: Item-13;
 }
 
+
+
+@media (max-width: 959px) {
+  .thumbItem {
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    min-height: 80px;
+  }
+}

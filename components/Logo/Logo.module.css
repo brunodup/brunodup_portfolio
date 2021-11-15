@@ -50,3 +50,11 @@
   transform-origin: top center;
   opacity: .6;
 }
+
+@media (max-width: 959px) {
+  .logo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+}

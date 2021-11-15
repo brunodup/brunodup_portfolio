@@ -39,6 +39,16 @@ function Nav() {
               <a>Contact</a>
             </Link>
           </li>
+          <li>
+            <Link href="/" locale="en">
+              <a>english</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/" locale="pt-BR">
+              <a>portuguese</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </>

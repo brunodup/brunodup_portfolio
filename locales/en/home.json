@@ -1,0 +1,10 @@
+{
+  "title": "Homepage",
+  "description": "this is a homepage",
+  "current-language": "Current language is /{{language}}",
+  "ecommerce":"E-COMMERCE",
+  "design":"DESIGN",
+  "webdev":"WEB DEVELOPMENT",
+  "nomadic":"DIGITAL NOMADIC",
+  "minimalism":"MINIMALISM"
+}
