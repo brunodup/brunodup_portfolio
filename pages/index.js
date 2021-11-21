@@ -32,7 +32,7 @@ function Home() {
       </aside>
       <GridContainer>
         {
-          projects.map((project,i) => <Thumb key={i} gridItem={`Item-${i+1}`} link={project.slug} icon={project.icon} name={project.name} />)
+          projects.map((project,i) => <Thumb key={i} gridItem={`Item-${i+1}`} link={`/projects/${project.slug}`} type={'title'} name={project.name} />)
         }
       </GridContainer>
     </Container>

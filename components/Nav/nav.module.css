@@ -66,4 +66,31 @@
     align-items: flex-end;
     flex-direction: column;
   }
+
+  .navOpen {
+    z-index: 10;
+  }
+
+  .navContent {
+    width: 100%;
+    background: rgba(0,0,0,.9);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 0;
+    padding: 0 40px;
+    z-index: 9;
+  }
+
+  .navContent.navActive {
+    padding: 110px 40px;
+    max-height: 2000px;
+  }
 }

@@ -26,29 +26,26 @@ function Nav() {
           </li>
           <li>
             <Link href="/about-us">
-              <a>About</a>
+              <a>Sobre</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a>Contato</a>
             </Link>
           </li>
           {/* <li>
-            <Link href="/projects">
-              <a>Projects</a>
-            </Link>
-          </li> */}
-          <li>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/" locale="en">
-              <a>english</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/" locale="pt-BR">
+            <span>
+              <Link href="/" locale="en">
+                <a>english</a>
+              </Link>
+            </span>
+            <span>
+              <Link href="/" locale="pt-BR">
               <a>portuguese</a>
             </Link>
-          </li>
+            </span>
+          </li> */}
         </ul>
       </nav>
     </>

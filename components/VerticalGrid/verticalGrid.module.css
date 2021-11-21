@@ -1,0 +1,16 @@
+.verticalGridContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  margin-right: 80px;
+}
+
+@media (max-width: 959px) {
+  .verticalGridContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    gap: 25px;
+  }
+}

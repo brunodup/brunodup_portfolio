@@ -1,0 +1,17 @@
+.quote {
+  background-color: #252525;
+  padding: 20px 80px;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+  padding-right: 40px;
+  margin-right: -40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.quoteAuthor {
+  display: block;
+  color: #666;
+  margin-top: 10px;
+}

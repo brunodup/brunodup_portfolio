@@ -8,17 +8,27 @@ function Thumb(props) {
 
   return (
     <div className={`${styles.thumb} ${props.gridItem} ${styles[props.gridItem]}`}>
-      {/* <Link href={`/project/${props.link}`}> */}
+      <Link href={`${props.link}`}>
         <div className={styles.thumbItem}>
-          <h3>
-            {props.name}
-            <small className={styles.thumbSmall}>(em breve)</small>
-          </h3>
-        {/* {
-          props.icon? <Icon path={props.icon} /> : <h3>props.name</h3>
-        } */}
+        {
+          (
+            props.type === 'photo' ?
+              <img src="" />
+            :
+              props.type === 'icon' ? 
+                <>
+                  <Icon path={props.icon} /> 
+                  <h3>{props.name}</h3>
+                </>
+              : 
+                <h3>
+                  {props.name}
+                  <small className={styles.thumbSmall}>(em breve)</small>
+                </h3>
+          )
+        }
         </div>
-      {/* </Link> */}
+      </Link>
     </div>
   )
 }

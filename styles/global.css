@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   background-color: #1b1b1b;
 }
 
@@ -23,6 +23,20 @@ body:before {
   left: 20px;
 }
 
+._flex {
+  display: flex;
+}
+
+@media (max-width:959px) {
+  ._flex {
+    flex-direction: column;
+
+  }
+  ._flex > div:first-of-type{order: 2;}
+  ._flex > div:last-of-type{order: 1;}
+}
+
+
 ul,
 ol {
   padding: 0;
@@ -34,5 +48,6 @@ ol {
     width: 36px;
     max-height: 75px;
     transform: rotate(-90deg);
+    z-index: 10;
   }
 }

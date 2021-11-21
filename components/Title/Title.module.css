@@ -1,7 +1,33 @@
 .title {
   color: white;
-  text-align: center;
+  text-align: right;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 6px;
+  font-size: 122px;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
+.title:after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='719' height='16' viewBox='0 0 719 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 7.29289C-0.0976311 7.68341 -0.0976311 8.31658 0.292893 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6568L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928928C7.68054 0.538404 7.04738 0.538403 6.65685 0.928928L0.292893 7.29289ZM806 7.00003L1 7L1 9L806 9.00003L806 7.00003Z' fill='white'/%3E%3C/svg%3E%0A");
+    width: 90%;
+    height: 30px;
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: right center;
+    margin-right: -20px;
+    background-size: contain;
+}
+
+@media (max-width: 959px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
