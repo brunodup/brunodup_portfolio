@@ -1,3 +1,11 @@
 .textBlock {
   color: white;
+  text-align: justify;
+  padding-left: 15%;
+}
+
+@media (max-width: 959px) {
+  .textBlock {
+    padding-left: 0;
+  }
 }

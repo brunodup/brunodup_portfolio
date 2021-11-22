@@ -7,6 +7,7 @@ import Lettering from '/components/Lettering';
 import Nav from '/components/Nav';
 import Thumb from '/components/Thumb';
 import GridContainer from '/components/GridContainer';
+import Title from '/components/Title/';
 
 import projects from '/pages/api/content.json';
 
@@ -40,7 +41,7 @@ function Home() {
         {
           project.length > 0 ?
            <>
-              <h1>{project[0].name}</h1>
+              <Title>{project[0].name}</Title>
               <h2>{project[0].year}</h2>
            </>
           :

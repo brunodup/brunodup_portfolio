@@ -1,17 +1,25 @@
 .quote {
-  background-color: #252525;
-  padding: 20px 80px;
-  border-radius: 10px;
-  color: white;
-  text-align: right;
-  padding-right: 40px;
-  margin-right: -40px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+    background-color: #252525;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: right;
+    padding-right: 40px;
+    margin-right: -40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 330px;
+    margin-bottom: 40px;
 }
 
 .quoteAuthor {
   display: block;
   color: #666;
   margin-top: 10px;
+}
+
+@media (max-width: 959px) {
+  .quote {
+    margin-left: 0;
+  }
 }
