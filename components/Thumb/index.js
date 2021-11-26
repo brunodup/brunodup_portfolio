@@ -23,7 +23,7 @@ function Thumb(props) {
               : 
                 <h3>
                   {props.name}
-                  <small className={styles.thumbSmall}>(em breve)</small>
+                  {/* <small className={styles.thumbSmall}>(em breve)</small> */}
                 </h3>
           )
         }

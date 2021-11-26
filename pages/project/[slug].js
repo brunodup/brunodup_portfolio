@@ -41,8 +41,7 @@ function Home() {
         {
           project.length > 0 ?
            <>
-              <Title>{project[0].name}</Title>
-              <h2>{project[0].year}</h2>
+              <Title>{project[0].name} <small>(em breve)</small></Title>
            </>
           :
           <h1>Não consegui encontrar essa página, tenta de novo por favor</h1>
