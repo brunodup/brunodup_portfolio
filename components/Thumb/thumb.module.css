@@ -18,6 +18,10 @@
   color: white;
 }
 
+.thumbLink {
+  text-decoration: none;
+}
+
 
 .thumb {
   margin: 10px;

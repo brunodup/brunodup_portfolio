@@ -42,7 +42,7 @@ function aboutUs() {
         <div class="_flex">
           <VerticalGrid>
             {
-              socials.map((social,i) => <Thumb key={i} link={`${social.link}`} type={'title'} name={social.name} />)
+              socials.map((social,i) => <Thumb key={i} link={`${social.link}`} type={'title'} name={social.name} target="external" />)
             }
           </VerticalGrid>
           <div>

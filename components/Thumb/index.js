@@ -6,29 +6,40 @@ import Icon from '../Icon';
 
 function Thumb(props) {
 
+  const thumbContent =  <div className={styles.thumbItem}>
+                          {
+                            (
+                              props.type === 'photo' ?
+                                <img src="" />
+                              :
+                                props.type === 'icon' ? 
+                                  <>
+                                    <Icon path={props.icon} /> 
+                                    <h3>{props.name}</h3>
+                                  </>
+                                : 
+                                  <h3>
+                                    {props.name}
+                                    {/* <small className={styles.thumbSmall}>(em breve)</small> */}
+                                  </h3>
+                            )
+                          }
+                          </div>
+
   return (
     <div className={`${styles.thumb} ${props.gridItem} ${styles[props.gridItem]}`}>
-      <Link href={`${props.link}`}>
-        <div className={styles.thumbItem}>
-        {
-          (
-            props.type === 'photo' ?
-              <img src="" />
-            :
-              props.type === 'icon' ? 
-                <>
-                  <Icon path={props.icon} /> 
-                  <h3>{props.name}</h3>
-                </>
-              : 
-                <h3>
-                  {props.name}
-                  {/* <small className={styles.thumbSmall}>(em breve)</small> */}
-                </h3>
-          )
-        }
-        </div>
-      </Link>
+        
+      {
+        props.target != "external" ?
+        <Link href={`${props.link}`}>
+          {thumbContent}           
+        </Link>
+        :
+        <a href={`${props.link}`} target="_blank" className={styles.thumbLink}>
+          {thumbContent}
+        </a>
+
+      }
     </div>
   )
 }
