@@ -14,7 +14,7 @@ import projects from './api/content.json';
 
 
 function Home() {
-  const {t,lang} = useTranslation('home');
+  // const {t,lang} = useTranslation('home');
 
   return (
     <>
@@ -22,11 +22,11 @@ function Home() {
       <aside>
       <Logo />
       <Lettering>
-        <span>{t('ecommerce')}</span>
-        <span>{t('design')}</span>
-        <span>{t('webdev')}</span>
-        <span>{t('nomadic')}</span>
-        <span>{t('minimalism')}</span>
+        <span>E-COMMERCE</span>
+        <span>DESIGN</span>
+        <span>DESENVOLVIMENTO WEB</span>
+        <span>NOMADISMO DIGITAL</span>
+        <span>MINIMALISMO</span>
       </Lettering>
       <Nav />
       </aside>

@@ -14,6 +14,10 @@
   flex-direction: column;
 }
 
+.logoTitle {
+  display: none;
+}
+
 .logo svg {
     margin-left: 30px;
     margin-top: 30px;
