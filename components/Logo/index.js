@@ -19,6 +19,7 @@ function Logo() {
         </svg>
     </h1>
     </Link>
+    
   )
 }
 
