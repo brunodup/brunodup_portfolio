@@ -22,11 +22,11 @@ function Home() {
       <aside>
       <Logo />
       <Lettering>
-        <span>E-COMMERCE</span>
-        <span>DESIGN</span>
-        <span>DESENVOLVIMENTO WEB</span>
-        <span>NOMADISMO DIGITAL</span>
-        <span>MINIMALISMO</span>
+        <h2>E-COMMERCE</h2>
+        <h2>DESIGN</h2>
+        <h2>DESENVOLVIMENTO WEB</h2>
+        <h2>NOMADISMO DIGITAL</h2>
+        <h2>MINIMALISMO</h2>
       </Lettering>
       <Nav />
       </aside>

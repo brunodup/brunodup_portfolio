@@ -1,14 +1,16 @@
 .lettering {
-  font-size: 26px;  
   font-weight: bold;
   color: white;
   padding-left: 40px;
   line-height: 2;
   min-height: 300px;
+  margin: 20px 0;
 }
 
-.lettering span {
+.lettering h2 {
+  font-size: 26px;  
   display: block;
+  margin: 0;
 }
 
 @media (max-width: 959px) {
