@@ -21,13 +21,7 @@ function Home() {
     <Container>
       <aside>
       <Logo />
-      <Lettering>
-        <h2>E-COMMERCE</h2>
-        <h2>DESIGN</h2>
-        <h2>DESENVOLVIMENTO WEB</h2>
-        <h2>NOMADISMO DIGITAL</h2>
-        <h2>MINIMALISMO</h2>
-      </Lettering>
+      <Lettering />
       <Nav />
       </aside>
       <GridContainer>

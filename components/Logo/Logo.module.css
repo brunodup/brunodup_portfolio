@@ -12,6 +12,7 @@
   display: inline-flex;
   margin: 0;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .logoTitle {
@@ -28,7 +29,7 @@
   transition: all 300ms;
 }
 
-.logo:hover .logoSymbol {
+/* .logo:hover .logoSymbol {
   transform: translate(0,-180px);
 }
 .logo .logoLetter {
@@ -41,7 +42,7 @@
 
 .logo:hover:before {
   animation-play-state: paused;
-}
+} */
 
 .logo:before {
   content: '';
@@ -50,7 +51,7 @@
   height: 246px;
   position: absolute;
   top: -20px;
-  animation: logoLight 3000ms infinite forwards alternate;
+  animation: logoLight 1200ms ease-in-out infinite forwards alternate;
   transform-origin: top center;
   opacity: .6;
 }

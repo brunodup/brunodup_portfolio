@@ -28,13 +28,7 @@ function Home() {
     <Container>
       <aside>
       <Logo />
-      <Lettering>
-        <span>E-COMMERCE</span>
-        <span>DESIGN</span>
-        <span>DESENVOLVIMENTO WEB</span>
-        <span>NOMADISMO DIGITAL</span>
-        <span>MINIMALISMO</span>
-      </Lettering>
+      <Lettering />
       <Nav />
       </aside>
       <div>
