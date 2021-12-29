@@ -18,10 +18,10 @@ function Thumb(props) {
                                     <h3>{props.name}</h3>
                                   </>
                                 : 
-                                  <h3>
+                                  <h4>
                                     {props.name}
                                     {/* <small className={styles.thumbSmall}>(em breve)</small> */}
-                                  </h3>
+                                  </h4>
                             )
                           }
                           </div>
