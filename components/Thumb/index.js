@@ -31,9 +31,9 @@ function Thumb(props) {
         
       {
         props.target != "external" ?
-        <Link href={`${props.link}`}>
+        <a href={`${props.link}`} target="_blank" className={styles.thumbLink}>
           {thumbContent}           
-        </Link>
+        </a>
         :
         <a href={`${props.link}`} target="_blank" className={styles.thumbLink}>
           {thumbContent}
